@@ -16,7 +16,10 @@ jobs:
     - name: Checkout private repo
       uses: actions/checkout@v2
       with:
-        repository: baljeetn/test
+        repository: your-username/your-private-repo
         token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+
+    - name: Display private repo files
+      run: ls -R private-repo-folder
 
     # Add your desired steps here to work with the code from the private repo
