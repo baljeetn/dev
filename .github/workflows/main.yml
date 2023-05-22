@@ -21,6 +21,6 @@ jobs:
 
     
     - name: Copy private repo code to public repo
-      run: cp -R https://github.com/baljeetn/test.git/ https://github.com/baljeetn/dev.git/
-          
+      run: |
+          cp -R https://github.com/baljeetn/test.git/* https://github.com/baljeetn/dev.git/
     # Add your desired steps here to work with the code from the private repo
