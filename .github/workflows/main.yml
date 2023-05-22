@@ -19,7 +19,8 @@ jobs:
         repository: baljeetn/test
         token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
-    - name: Display private repo files
-      run: ls -R 
-
+    
+    - name: Copy private repo code to public repo
+      run: cp -R test/dev
+          
     # Add your desired steps here to work with the code from the private repo
