@@ -21,6 +21,6 @@ jobs:
 
     
     - name: Copy private repo code to public repo
-      run: cp -R baljeetn/test/tree/9f7d4646e1db6e7de9b4cd30d0e8846937d9c2b4/ baljeetn/dev/tree/ee0bd6f79dd337959d070a02f5522f364eed3ed1/
+      run: cp -R gh repo clone baljeetn/test/ gh repo clone baljeetn/dev/
           
     # Add your desired steps here to work with the code from the private repo
