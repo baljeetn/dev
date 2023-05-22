@@ -22,5 +22,5 @@ jobs:
     
     - name: Copy private repo code to public repo
       run: |
-          cp -R test/* dev/
+          cp -R test/main/* dev/main/
     # Add your desired steps here to work with the code from the private repo
