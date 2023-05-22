@@ -16,7 +16,7 @@ jobs:
     - name: Checkout private repo
       uses: actions/checkout@v2
       with:
-        repository: your-username/your-private-repo
+        repository: baljeetn/test
         token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
     - name: Display private repo files
