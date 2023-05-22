@@ -20,6 +20,6 @@ jobs:
         token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
     - name: Display private repo files
-      run: ls -R test
+      run: ls -R baljeetn/test
 
     # Add your desired steps here to work with the code from the private repo
