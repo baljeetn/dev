@@ -1,0 +1,22 @@
+name: Access Private Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout public repo
+      uses: actions/checkout@v2
+
+    - name: Checkout private repo
+      uses: actions/checkout@v2
+      with:
+        repository: baljeetn/test
+        token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+
+    # Add your desired steps here to work with the code from the private repo
