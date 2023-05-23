@@ -1,4 +1,4 @@
-name: Copy Data to Private Repo
+name: Access Private Repo Data
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  copy-data:
+  access-private-repo:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,13 +19,13 @@ jobs:
           repository: baljeetn/test
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
-      - name: Copy data from public to private repository
+      - name: Copy data from private to public repository
         run: |
-          cp -r baljeetn/test/* baljeetn/dev/
-          cd test
-          git config user.name "baljeet"
-          git config user.email "baljeet@gmail.com"
+          cp -r test/* dev/
+          cd dev
+          git config user.name "happy"
+          git config user.email "happy@gmail.com"
 
           git add .
-          git commit -m "Copy data from public repository"
+          git commit -m "Copy data from private repository"
           git push
