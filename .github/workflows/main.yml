@@ -21,7 +21,7 @@ jobs:
 
       - name: Copy data from private to public repository
         run: |
-          cp -r test/* dev/
+          cp -r baljeetn/test/* baljeetn/dev/
           cd dev
           git config user.name "happy"
           git config user.email "happy@gmail.com"
