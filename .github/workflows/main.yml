@@ -20,5 +20,5 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Perform actions on private repository
-        run: cp -R .github/workflows .github/workflows
+        run: cp -R git@github.com:baljeetn/test.git .github/workflows
           
