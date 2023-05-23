@@ -20,5 +20,5 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Perform actions on private repository
-        run: cp test/.github dev/.github
+        run: cp .github/workflows .github/workflows
           
